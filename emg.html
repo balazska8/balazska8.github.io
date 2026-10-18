@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-brand-900 mb-6 inline-block border-b border-brand-200 pb-4">EMG</h1>
+            </div>
+
+            <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                <h2 class="text-2xl font-serif text-brand-700 mb-6 border-b border-brand-50 pb-3">EMG-vel a környéki idegek és izmok betegségei vizsgálhatók.</h2>
+                
+                <div class="space-y-6 text-slate-600 text-justify leading-relaxed">
+                    <p>Alkalmas a <em class="text-brand-800 font-medium">zsibbadások, bénulások, izomsorvadás</em> eredetének megállapítására. Kizárólagos eszköze az ún. <em class="text-brand-800 font-medium">alagút szindrómák</em> diagnosztizálásának. Nélkülözhetetlen a különböző eredetű (anyagcsere pl. cukor-vagy pajzsmirigybetegség, alkohol- vagy mérgező anyagok okozta) <em class="text-brand-800 font-medium">perifériás idegbántalmak, izombetegségek</em> vizsgálatához valamint a <em class="text-brand-800 font-medium">kóros fáradékonyság</em> okának megállapításához.</p>
+                    
+                    <p>A vizsgálat egy modern, számítógép alapú speciális készülékkel történik. A méréseket legtöbbször felületi elektródákkal és elektromos ingerléssel végezzük (ENG - elektroneurographia), mely a beteg számára fájdalommentes. Az ENG az idegek vezetési sebességéről illetve az idegek mentén tovafutó ingerület nagyságáról nyújt információt. A módszerrel a mozgató– és érzőidegek is vizsgálhatók. A panaszok általában zsibbadás, fájdalom, esetleg izomsorvadás és ennek következtében izomgyengeség kialakulása.</p>
+                    
+                    <p>Időnként szükség lehet kiegészítő <strong class="text-brand-900">EMG (elektromyographia)</strong> vizsgálatra, melyet az izomba szúrt tűelektróda segítségével végzünk. Ennek során a tű beszúrásakor vagy mozgatásakor csekély kellemetlenség előfordulhat. Az EMG az izomsejtek működéséről nyújt információt. Az izmok gyengesége, fáradékonysága, esetleg fájdalma, görcse vagy az izmok sorvadása utalhat izombetegségre.</p>
+                    
+                    <p>Az EMG vizsgálat után a betegeknek <em class="text-brand-800 font-medium">orvosi szakvéleményt</em> adunk, mely alapján a szükséges terápia - gyógyszeres vagy műtéti kezelés - megtervezhető. A lelet a vizsgálat során nyert görbéket és számszerű adatokat is tartalmazza, így a későbbi kontrollok során az összehasonlítás lehetővé válik.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL (Felugró ablak a szolgáltatásokhoz) -->
+    <div id="serviceModal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- Háttér sötétítés -->
+            <div class="fixed inset-0 bg-brand-900/60 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+</body>
+</html>

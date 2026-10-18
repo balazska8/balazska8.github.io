@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkatársaink | SANI-RAD Kft.</title>
+    
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- NAVIGATION (Megegyezik az index.html-el, aktív menüpont módosítva) -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-brand-700 font-semibold border-b-2 border-brand-700 pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-extrabold text-brand-900 mb-6 inline-block border-b border-brand-200 pb-4">Munkatársaink</h1>
+            </div>
+            
+            <div class="space-y-12">
+                
+                <!-- Dr. Söröss Tamás -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100 flex flex-col md:flex-row items-start gap-10 md:gap-16 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-full md:w-1/3 flex justify-center sticky top-32">
+                        <div class="relative w-64 h-80 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <!-- KÉP HELYE -->
+                            <img src="munkatars1.png" alt="[KÉP HELYE: Dr. Söröss Tamás]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0">[KÉP HELYE:<br>munkatars1.png]</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-justify">
+                        <h2 class="text-3xl font-bold text-brand-900 mb-2">Dr. Söröss Tamás</h2>
+                        <h3 class="text-lg font-serif italic text-brand-600 mb-6 border-b border-brand-100 pb-4">radiológus, családorvos, foglalkozás-egészségügyi szakorvos</h3>
+                        <div class="space-y-4 text-slate-600 leading-relaxed">
+                            <p>1990-ben végzett a debreceni Orvostudományi Egyetemen, majd Esztergomban dolgozott a Vaszary Kolos Kórház sebészeti osztályán.</p>
+                            <p>1993-tól 1997-ig ugyanitt radiológusként folytatta munkáját, 1996-tól szakorvosként.</p>
+                            <p>1997-ben a Semmelweis Orvostudományi Egyetem háziorvos rezidenseként készült családorvostani licence, majd második szakvizsgájára.</p>
+                            <p>2000-től családorvos Esztergomban a 2. sz. háziorvosi praxisban.</p>
+                            <p>2006-tól üzemorvosként lát el foglalkozás-egészségügyi feladatokat, 2010-től mint foglalkozás-egészségügyi szakorvos.</p>
+                            <p>Szakmai pályafutása során fő foglalkozása mellett több intézményben is dolgozott:</p>
+                            <p>1998-2002 között a Telki Magánkórházban radiológusként.</p>
+                            <p>1998-2003 között a helyi sportrepülők Repülőorvosi Bizottsága vezetőjeként.</p>
+                            <p>2002-2003 között Visegrádon a Rehabilitációs Szakkórházban radiológusként.</p>
+                            <p>2005-2008 között a Mozgásszervi Diagnosztika Kft. CT. laborjában radiológusként.</p>
+                            <p>2000-től 2021. novemberig családorvosként tevékenykedett, 2006-tól 2021-ig üzemorvosként látott el foglalkozás-egészségügyi feladatokat.</p>
+                            <p>2022-től csak radiológusként dolgozik, elsősorban magánellátás keretében.</p>
+                            <p>Szakmai továbbképzéseken rendszeresen részt vesz. Több előadás szerzője, társszerzője.</p>
+                            <p>1994-ben a philadelphiai Thomas Jefferson University Hospitalban radiológiai, ezen belül vaszkuláris ultrahang képzésben részesült.</p>
+                            <p>Tagja a Magyar Radiológusok Társaságának.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Tóth Marianna -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100 flex flex-col md:flex-row items-start gap-10 md:gap-16 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-full md:w-1/3 flex justify-center sticky top-32">
+                        <div class="relative w-64 h-80 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <!-- KÉP HELYE -->
+                            <img src="munkatars2.png" alt="[KÉP HELYE: Dr. Tóth Marianna]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0">[KÉP HELYE:<br>munkatars2.png]</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-justify">
+                        <h2 class="text-3xl font-bold text-brand-900 mb-2">Dr. Tóth Marianna</h2>
+                        <h3 class="text-lg font-serif italic text-brand-600 mb-6 border-b border-brand-100 pb-4">neurológus és klinikai neurofiziológus főorvos, fejfájás specialista, epileptológus</h3>
+                        <div class="space-y-4 text-slate-600 leading-relaxed">
+                            <p>1990-ben szerzett általános orvosi diplomát „Summa Cum laude” minősítéssel a DOTE-n. 4 évvel később neurológus szakorvos lett, 2001-ben klinikai elektroencephalografusi szakképesítést szerzett. 2010-ben klinikai neurofiziológiából is szakvizsgát tett.</p>
+                            <p>1999-ig az esztergomi Vaszary Kolos Kórház Neurológiai Osztályán dolgozott.</p>
+                            <p>8 évig Budapesten az Országos Pszichiátriai és Neurológiai Intézet EEG és Klinikai Elektrofiziológiai Osztályának és Fejfájás Ambulanciájának adjunktusa volt.</p>
+                            <p>2007-től az esztergomi Vaszary Kolos Kórház Neurofiziológiai Laboratóriumát és Epilepszia szakrendelését vezeti valamint Fejfájás szakambulancia keretében rendel.</p>
+                            <p>2017-től részmunkaidőben a budapesti Szent János Kórház Neurofiziológiai Laboratóriumában is dolgozik.</p>
+                            <p>2000-től folytat magánpraxist, ahol EMG és perifériás idegultrahang vizsgálatokat is végez.</p>
+                            <p>Szakmai továbbképzés: Thomas Jefferson University Hospital, Philadelphia</p>
+                            <p>Számos előadás és cikk szerzője. Tagja a Magyar Fejfájás Társaság vezetőségének, valamint az EEG és Klinikai Neurofiziológiai Társaságnak és a Nemzetközi Epilepsziaellenes Liga Magyarországi Tagozatának.</p>
+                            <p>Különleges érdeklődési területei: migrén kezelése és kutatása, perifériás idegrendszeri betegségek vizsgálata neurofiziológiai és szonographias (perifériás ideg ultrahang) módszerekkel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Németh Ferenc -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100 flex flex-col md:flex-row items-start gap-10 md:gap-16 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-full md:w-1/3 flex justify-center sticky top-32">
+                        <div class="relative w-64 h-80 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <!-- KÉP HELYE -->
+                            <img src="munkatars3.png" alt="[KÉP HELYE: Dr. Németh Ferenc]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0">[KÉP HELYE:<br>munkatars3.png]</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-justify">
+                        <h2 class="text-3xl font-bold text-brand-900 mb-2">Dr. Németh Ferenc</h2>
+                        <h3 class="text-lg font-serif italic text-brand-600 mb-6 border-b border-brand-100 pb-4">belgyógyász- kardiológus főorvos echocardiográfiás licence vizsgával, szakmai tudományos szakfordító</h3>
+                        <div class="space-y-4 text-slate-600 leading-relaxed">
+                            <p class="font-medium text-brand-800">Munkahely:</p>
+                            <p>1999. óta a Vaszary Kolos Kórház Belgyógyászat-kardiológiai osztályán dolgozik.</p>
+                            <p class="font-medium text-brand-800 mt-6">Tanulmányok:</p>
+                            <p>1999-ben a Szent-Györgyi Albert Orvostudományi Egyetemen szerzett általános orvosi diplomát Szegeden.</p>
+                            <p>2005-ben belgyógyászati szakvizsgát tett.</p>
+                            <p>2011-ben kardiológiai szakvizsgát majd echocardiográfiás licence vizsgát szerzett.</p>
+                            <p>A szakrendelés célja a betegek kardiovaszkuláris és általános belgyógyászati állapotának felmérése, tanácsadás valamint olyan gyógyszeres és nem gyógyszeres kezelés és teendők megbeszélése, melyekkel a szív és keringési megbetegedések prognózisa javítható.</p>
+                            <p>A rendelésen teljes körű fizikális vizsgálatot végzünk EKG és szívultrahang vizsgálattal kiegészítve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Szilágyi Erzsébet -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100 flex flex-col md:flex-row items-start gap-10 md:gap-16 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-full md:w-1/3 flex justify-center sticky top-32">
+                        <div class="relative w-64 h-80 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <!-- KÉP HELYE -->
+                            <img src="munkatars4.png" alt="[KÉP HELYE: Dr. Szilágyi Erzsébet]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0">[KÉP HELYE:<br>munkatars4.png]</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-justify">
+                        <h2 class="text-3xl font-bold text-brand-900 mb-2">Dr. Szilágyi Erzsébet</h2>
+                        <h3 class="text-lg font-serif italic text-brand-600 mb-6 border-b border-brand-100 pb-4">fül-orr-gégész és audiológus szakorvos</h3>
+                        <div class="space-y-4 text-slate-600 leading-relaxed">
+                            <p>1979.-ben végeztem a Szegedi Orvostudományi Egyetem általános orvosi karán.</p>
+                            <p>1984.- ig a Gyöngyösi Bugát Pál kórház Fül-orr-gégészeti osztályán dolgoztam. Ebben az évben fül-orr-gégész szakvizsgát szereztem.</p>
+                            <p>1984 .-ben kezdtem el dolgozni Esztergomban a Vaszary Kolos kórházban.</p>
+                            <p>1996.-ban szakvizsgáztam audiológiából, 2005-ben jogi szakoklevelet szereztem az ELTE Jogi Továbbképző Intézetében.</p>
+                            <p>2010.-ig dolgoztam Esztergomban,az utolsó években osztályvezető főorvosként.</p>
+                            <p>Magánrendelésemen bármilyen fül- orr- gégészettel kapcsolatos panasszal várom gyermek és felnőtt pácienseimet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asszisztensek szekciója -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-brand-200">
+                    
+                    <!-- Pecho Zita -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-brand-100 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                        <div class="relative w-48 h-48 mb-6 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <img src="munkatars5.png" alt="[KÉP HELYE: Pecho Zita]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0 text-sm">[KÉP HELYE:<br>munkatars5.png]</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-brand-900 mb-1">Pecho Zita</h2>
+                        <h3 class="text-base font-serif italic text-brand-600">radiológiai asszisztens</h3>
+                    </div>
+
+                    <!-- Beáth Erika -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-brand-100 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                        <div class="relative w-48 h-48 mb-6 rounded-full overflow-hidden shadow-sm border-4 border-brand-200 bg-brand-50 flex items-center justify-center">
+                            <img src="munkatars6.png" alt="[KÉP HELYE: Beáth Erika]" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.style.display='none'">
+                            <span class="text-brand-700 font-medium text-center p-4 border-2 border-dashed border-brand-300 rounded-full w-[90%] h-[90%] flex items-center justify-center z-0 text-sm">[KÉP HELYE:<br>munkatars6.png]</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-brand-900 mb-1">Beáth Erika</h2>
+                        <h3 class="text-base font-serif italic text-brand-600">adminisztrátor</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV (Megegyezik az index.html-el) -->
+    <section class="py-16 bg-brand-800 border-t border-brand-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Linkek logikus listája -->
+                <div class="text-brand-200">
+                    <ul class="space-y-4 text-lg">
+                        <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                        <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                        <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                        <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                        <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                        <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                        
+                        <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                        <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                    </ul>
+                </div>
+
+                <!-- Partner oldal (Ornament by Vernis) -->
+                <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                    <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                    <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                    
+                    <!-- Kép hivatkozása -->
+                    <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                        <!-- Ornament kép beillesztése -->
+                        <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Megegyezik az index.html-el) -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

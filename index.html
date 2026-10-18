@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brand-700 font-semibold border-b-2 border-brand-700 pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-24"> <!-- Növelt padding a magasabb fejléc miatt -->
+        
+        <!-- ALERT / NEWS BANNER -->
+        <div class="bg-brand-700 text-brand-50 border-b border-brand-800">
+            <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-center md:justify-between items-center text-sm sm:text-base font-medium gap-3">
+                <div class="flex items-center gap-2 text-center md:text-left">
+                    <svg class="h-6 w-6 text-brand-200 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="tracking-wide">A fül-orr-gégészeti rendelés október 29-én és november 5-én szabadság miatt elmarad. Új időpont kérésére november 10-től lesz lehetőség.</span>
+                </div>
+                <div class="bg-brand-100 text-brand-800 px-5 py-1.5 rounded-full shadow-md text-xs sm:text-sm font-bold whitespace-normal md:whitespace-nowrap text-center border border-brand-200">
+                    Egyeztetett időpontja lemondását legalább 24 órával előtte jelezze!
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section class="relative bg-brand-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative z-10 pb-8 bg-brand-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 fade-in-up">
+                    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <div class="sm:text-center lg:text-left pt-10">
+                            <h1 class="text-3xl tracking-tight font-extrabold text-brand-900 sm:text-4xl md:text-5xl leading-tight">
+                                Örömmel üdvözöljük honlapunkon!
+                            </h1>
+                            <div class="mt-4 text-base text-slate-600 sm:mt-6 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-6 md:text-xl lg:mx-0 leading-relaxed">
+                                <p>Ismét egy új, reményeink szerint az Önök igényeihez rugalmasan alkalmazkodó, folyamatosan bővülő egészségügyi vállalkozást ismerhet meg tájékoztatónkból.</p>
+                            </div>
+                            <div class="mt-8 sm:mt-12 sm:flex sm:justify-center lg:justify-start">
+                                <div class="rounded-md shadow">
+                                    <a href="bemutatkozas.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-700 hover:bg-brand-800 transition-colors md:py-4 md:text-lg md:px-10">
+                                        Bővebben rólunk
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <!-- Rendelő kép beillesztése -->
+                <div class="h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full bg-brand-200 flex items-center justify-center border-l border-brand-300 relative overflow-hidden">
+                    <img src="rendelo.png" alt="Orvosi rendelő" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <!-- Barna színátmenet a képre a harmóniáért -->
+                    <div class="absolute inset-0 bg-brand-900 mix-blend-multiply opacity-20 z-10"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="szakrendelesek" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-up" style="animation-delay: 0.2s;">
+                <div class="text-center mb-16">
+                    <h2 class="text-base text-brand-700 font-semibold tracking-wide uppercase">Szolgáltatásaink</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">Szakrendeléseink</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Szolgáltatás kártya 1 -->
+                    <div onclick="openModal('radiologia')" class="cursor-pointer bg-brand-50 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 p-8 border border-brand-100 flex flex-col items-center text-center group">
+                        <div class="bg-white rounded-full p-4 mb-6 text-brand-700 shadow-sm group-hover:bg-brand-700 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-900">Radiológia</h3>
+                    </div>
+
+                    <!-- Szolgáltatás kártya 2 -->
+                    <div onclick="openModal('neurologia')" class="cursor-pointer bg-brand-50 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 p-8 border border-brand-100 flex flex-col items-center text-center group">
+                        <div class="bg-white rounded-full p-4 mb-6 text-brand-700 shadow-sm group-hover:bg-brand-700 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-900">Neurológia</h3>
+                    </div>
+
+                    <!-- Szolgáltatás kártya 3 -->
+                    <div onclick="openModal('kardiologia')" class="cursor-pointer bg-brand-50 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 p-8 border border-brand-100 flex flex-col items-center text-center group">
+                        <div class="bg-white rounded-full p-4 mb-6 text-brand-700 shadow-sm group-hover:bg-brand-700 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-900">Kardiológia</h3>
+                    </div>
+
+                    <!-- Szolgáltatás kártya 4 -->
+                    <div onclick="openModal('fulorrgegeszet')" class="cursor-pointer bg-brand-50 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 p-8 border border-brand-100 flex flex-col items-center text-center group">
+                        <div class="bg-white rounded-full p-4 mb-6 text-brand-700 shadow-sm group-hover:bg-brand-700 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-900">Fül-orr-gégészet</h3>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="szakrendelesek.html" class="inline-flex items-center justify-center px-8 py-3 border border-brand-200 shadow-sm text-base font-medium rounded-md text-brand-800 bg-white hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                        Részletek a szakrendelésekről
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & DOCTORS SECTION -->
+        <section id="kapcsolat" class="py-20 bg-brand-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-up" style="animation-delay: 0.4s;">
+                <div class="bg-brand-800 rounded-3xl overflow-hidden shadow-xl lg:flex">
+                    
+                    <!-- Orvosok lista -->
+                    <div class="lg:w-2/3 p-8 md:p-12 text-brand-50">
+                        <h2 class="text-3xl font-extrabold mb-8 text-white">Elérhetőség és Időpontkérés</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            
+                            <!-- Orvos 1 -->
+                            <div class="bg-brand-900/40 p-6 rounded-xl border border-brand-700">
+                                <h4 class="text-xl font-bold text-white mb-2">Dr. Söröss Tamás</h4>
+                                <div class="flex items-center text-brand-200 mb-1">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <span class="font-medium text-lg">+36 30 516 6205</span>
+                                </div>
+                                <p class="text-sm text-brand-200/80">Időpont egyeztetés szükséges</p>
+                            </div>
+
+                            <!-- Orvos 2 -->
+                            <div class="bg-brand-900/40 p-6 rounded-xl border border-brand-700">
+                                <h4 class="text-xl font-bold text-white mb-2">Dr. Tóth Marianna</h4>
+                                <div class="flex items-center text-brand-200 mb-1">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <span class="font-medium text-lg">+36 30 355 8381</span>
+                                </div>
+                                <p class="text-sm text-brand-200/80">Időpont egyeztetés munkanapokon 14-18 óráig</p>
+                            </div>
+
+                            <!-- Orvos 3 -->
+                            <div class="bg-brand-900/40 p-6 rounded-xl border border-brand-700">
+                                <h4 class="text-xl font-bold text-white mb-2">Dr. Németh Ferenc</h4>
+                                <div class="flex items-center text-brand-200 mb-1">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <span class="font-medium text-lg">+36 30 516 6205</span>
+                                </div>
+                                <p class="text-sm text-brand-200/80">Időpont egyeztetés szükséges</p>
+                            </div>
+
+                            <!-- Orvos 4 -->
+                            <div class="bg-brand-900/40 p-6 rounded-xl border border-brand-700">
+                                <h4 class="text-xl font-bold text-white mb-2">Dr. Szilágyi Erzsébet</h4>
+                                <div class="flex items-center text-brand-200 mb-1">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <span class="font-medium text-lg">+36 30 200 7530</span>
+                                </div>
+                                <p class="text-sm text-brand-200/80">Időpont egyeztetés szükséges</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Cím és Email -->
+                    <div class="lg:w-1/3 bg-brand-900 p-8 md:p-12 flex flex-col justify-center border-l border-brand-700 text-white">
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-brand-200 uppercase tracking-wider mb-4">Rendelőnk címe</h3>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <p class="text-xl font-medium">2500 Esztergom,<br>Dessewffy u. 11.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-brand-200 uppercase tracking-wider mb-4">E-mail kapcsolat</h3>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-brand-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <a href="mailto:info@sani-rad.hu" class="text-xl font-medium hover:text-white transition-colors">info@sani-rad.hu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL (Felugró ablak a szolgáltatásokhoz) -->
+    <div id="serviceModal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <!-- Háttér sötétítés -->
+            <div class="fixed inset-0 bg-brand-900/60 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            
+            <!-- Maga a felugró panel -->
+            <div id="modalPanel" class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full scale-95 opacity-0 border border-brand-200">
+                <div class="bg-white px-4 pt-5 pb-6 sm:p-6 sm:pb-8 relative">
+                    <!-- Csak a bezárás X gomb a jobb felső sarokban -->
+                    <button type="button" onclick="closeModal()" class="absolute top-4 right-4 bg-brand-50 rounded-md p-1 text-slate-400 hover:text-brand-700 hover:bg-brand-100 focus:outline-none transition-colors" aria-label="Bezárás">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                    
+                    <div class="sm:flex sm:items-start mt-2">
+                        <div class="mt-3 text-left w-full">
+                            <h3 class="text-2xl leading-6 font-bold text-brand-900 mb-5 border-b border-brand-100 pb-4" id="modalTitle"></h3>
+                            <div class="mt-2 text-slate-600 text-base leading-relaxed" id="modalBody">
+                                <!-- Ide kerül beillesztésre JS által a tartalom -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT A FELUGRÓ ABLAKHOZ -->
+    <script>
+        const modalData = {
+            'radiologia': {
+                title: 'Radiológia',
+                content: `
+                    <p class="mb-4">Ultrahang diagnosztika. Radiológiai vizsgálatok képanyagának, leleteinek értékelése.</p>
+                    <p class="font-medium text-slate-800">A vizsgálatokat <span class="text-brand-700 font-bold">Dr. Söröss Tamás</span> végzi.</p>
+                `
+            },
+            'neurologia': {
+                title: 'Neurológia, ENG/EMG',
+                content: `
+                    <ul class="list-disc pl-5 mb-4 space-y-2 text-slate-600">
+                        <li>Alagút syndromák, polyneuropathiák, izombántalmak, kóros fáradékonyság</li>
+                        <li><a href="fejfajas.html" class="text-brand-600 font-medium hover:underline">Fejfájás</a></li>
+                        <li>Gerincbetegségek (nyak-, hát- és derékfájás)</li>
+                        <li>Epilepszia</li>
+                        <li>Szédülés</li>
+                        <li>ENG/<a href="emg.html" class="text-brand-600 font-medium hover:underline">EMG</a></li>
+                    </ul>
+                    <p class="font-medium text-slate-800 mb-4">A vizsgálatokat <span class="text-brand-700 font-bold">Dr. Tóth Marianna</span> végzi.</p>
+                    <div class="bg-brand-50 p-3 rounded-lg border border-brand-200 italic text-sm text-slate-600 text-center font-medium">Előzetes időpont egyeztetés szükséges, munkanapokon 14-18 óráig!</div>
+                `
+            },
+            'kardiologia': {
+                title: 'Kardiológia',
+                content: `
+                    <p class="mb-4">A szakrendelés célja a betegek kardiovaszkuláris és általános belgyógyászati állapotának felmérése, tanácsadás valamint olyan gyógyszeres és nem gyógyszeres kezelés és teendők megbeszélése, melyekkel a szív és keringési megbetegedések prognózisa javítható.</p>
+                    <p class="mb-4">A rendelésen teljes körű fizikális vizsgálatot végzünk EKG és szívultrahang vizsgálattal kiegészítve.</p>
+                    <p class="font-medium text-slate-800">Kérjen időpontot <span class="text-brand-700 font-bold">Dr. Németh Ferenc</span> rendelésére.</p>
+                `
+            },
+            'fulorrgegeszet': {
+                title: 'Fül- orr- gégészet',
+                content: `
+                    <p class="mb-4">Magánrendelésemen bármilyen fül- orr- gégészettel kapcsolatos panasszal várom gyermek és felnőtt pácienseimet.</p>
+                    <p class="text-slate-700 text-xl mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> 
+                        +36 30 200 7530
+                    </p>
+                    <p class="font-medium text-slate-800">Kérjen időpontot <span class="text-brand-700 font-bold">Dr. Szilágyi Erzsébet</span> rendelésére.</p>
+                `
+            }
+        };
+
+        function openModal(serviceKey) {
+            const modal = document.getElementById('serviceModal');
+            const panel = document.getElementById('modalPanel');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+
+            title.innerHTML = modalData[serviceKey].title;
+            body.innerHTML = modalData[serviceKey].content;
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                panel.classList.remove('scale-95', 'opacity-0');
+                panel.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            const panel = document.getElementById('modalPanel');
+            
+            panel.classList.remove('scale-100', 'opacity-100');
+            panel.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>

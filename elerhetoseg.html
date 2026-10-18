@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-brand-700 font-semibold border-b-2 border-brand-700 pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+ <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12 text-center">
+                <h1 class="text-4xl font-extrabold text-brand-900 mb-6 inline-block border-b border-brand-200 pb-4">Elérhetőség</h1>
+            </div>
+
+            <!-- KAPCSOLATI ADATOK -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                
+                <!-- Bal oszlop: Cím és Email -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-brand-100 h-full">
+                    <h2 class="text-2xl font-semibold text-brand-600 border-b-2 border-brand-200 pb-3 mb-8">Cím</h2>
+                    
+                    <div class="space-y-6 text-lg text-slate-700">
+                        <div class="flex items-start group">
+                            <svg class="w-6 h-6 text-brand-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <span class="font-medium text-slate-500 block text-sm mb-1">E-mail:</span>
+                                <a href="mailto:info@sani-rad.hu" class="text-brand-800 hover:text-brand-600 transition-colors">info@sani-rad.hu</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-brand-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <span class="font-medium text-slate-500 block text-sm mb-1">Cím:</span>
+                                <p class="text-brand-900">2500 Esztergom, Dessewffy u. 11.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jobb oszlop: Telefonszámok -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-brand-100 h-full">
+                    <h2 class="text-2xl font-semibold text-slate-800 border-b-2 border-slate-200 pb-3 mb-8">Telefonszám</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="border-b border-brand-50 pb-4 last:border-0 last:pb-0">
+                            <div class="text-brand-900 font-medium mb-1">Dr. Söröss Tamás: <span class="text-brand-600 font-bold ml-1 tracking-wide">+36 30 516 6205</span></div>
+                            <div class="text-sm text-slate-500 italic">(Időpont egyeztetés szükséges)</div>
+                        </div>
+                        
+                        <div class="border-b border-brand-50 pb-4 last:border-0 last:pb-0">
+                            <div class="text-brand-900 font-medium mb-1">Dr. Tóth Marianna: <span class="text-brand-600 font-bold ml-1 tracking-wide">+36 30 355 8381</span></div>
+                            <div class="text-sm text-slate-500 italic font-medium">(Időpont egyeztetés munkanapokon 14-18-óráig)</div>
+                        </div>
+                        
+                        <div class="border-b border-brand-50 pb-4 last:border-0 last:pb-0">
+                            <div class="text-brand-900 font-medium mb-1">Dr. Németh Ferenc: <span class="text-brand-600 font-bold ml-1 tracking-wide">+36 30 516 6205</span></div>
+                            <div class="text-sm text-slate-500 italic">(Időpont egyeztetés szükséges)</div>
+                        </div>
+                        
+                        <div class="border-b border-brand-50 pb-4 last:border-0 last:pb-0">
+                            <div class="text-brand-900 font-medium mb-1">Dr. Szilágyi Erzsébet: <span class="text-brand-600 font-bold ml-1 tracking-wide">+36 30 2007530</span></div>
+                            <div class="text-sm text-slate-500 italic">(Időpont egyeztetés szükséges)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TÉRKÉP -->
+            <div class="bg-white rounded-3xl shadow-sm border border-brand-100 overflow-hidden mb-16 h-96 relative">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Esztergom,%20Dessewffy%20u.%2011&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="absolute inset-0 grayscale-[20%] contrast-[90%]"> <!-- Enyhe szűrő a térképhez, hogy jobban illeszkedjen a pasztell dizájnhoz -->
+                </iframe>
+            </div>
+
+            <!-- KAPCSOLATŰRLAP -->
+            <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                <h2 class="text-3xl font-semibold text-brand-900 mb-8">Írjon nekünk!</h2>
+                
+                <form action="#" method="POST" class="space-y-6">
+                    
+                    <div>
+                        <input type="text" id="name" name="name" required placeholder="Név (kötelező)" 
+                            class="w-full px-5 py-4 bg-brand-50/50 border border-brand-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-slate-700 placeholder-slate-400">
+                    </div>
+                    
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="Email cím (kötelező)" 
+                            class="w-full px-5 py-4 bg-brand-50/50 border border-brand-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-slate-700 placeholder-slate-400">
+                    </div>
+                    
+                    <div>
+                        <input type="tel" id="phone" name="phone" placeholder="Telefonszám" 
+                            class="w-full px-5 py-4 bg-brand-50/50 border border-brand-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-slate-700 placeholder-slate-400">
+                    </div>
+                    
+                    <div>
+                        <input type="text" id="subject" name="subject" placeholder="Tárgy" 
+                            class="w-full px-5 py-4 bg-brand-50/50 border border-brand-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-slate-700 placeholder-slate-400">
+                    </div>
+                    
+                    <div>
+                        <textarea id="message" name="message" rows="6" placeholder="Üzenet" required
+                            class="w-full px-5 py-4 bg-brand-50/50 border border-brand-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-slate-700 placeholder-slate-400 resize-y"></textarea>
+                    </div>
+                    
+                    <div class="flex items-center justify-center pt-2 pb-4">
+                        <input id="terms" name="terms" type="checkbox" required
+                            class="h-5 w-5 text-brand-600 focus:ring-brand-500 border-gray-300 rounded cursor-pointer">
+                        <label for="terms" class="ml-3 block text-sm text-slate-600 cursor-pointer">
+                            Elolvastam és elfogadom <a href="#" class="text-brand-600 hover:text-brand-800 font-medium transition-colors">az adatkezelési tájékoztatót.</a>
+                        </label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" 
+                            class="inline-flex justify-center py-4 px-12 border border-transparent shadow-sm text-lg font-medium rounded-xl text-white bg-brand-500 hover:bg-brand-600 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-all duration-300 w-full sm:w-auto min-w-[200px]">
+                            Küldés
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

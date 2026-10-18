@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12 text-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-brand-900 mb-2 inline-block border-b border-brand-200 pb-4">Adatkezelési tájékoztató</h1>
+                <h2 class="text-xl font-medium text-brand-700 mt-2">Adatvédelmi tájékoztató</h2>
+            </div>
+
+            <!-- SZÖVEGES TARTALOM DOBOZA -->
+            <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                
+                <div class="space-y-6 text-slate-600 text-justify leading-relaxed">
+                    
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">1. Az adatkezelő</h3>
+                    <p>Szolgáltató neve: Sani-Rad Egészségügyi Szolgáltató Kft.<br>
+                    Szolgáltató székhelye: 2500 Esztergom, Vécsey K. u. 3. / levelezési címe: ua.<br>
+                    Nyilvántartásba bejegyző hatóság: KEM –i Cégbíróság<br>
+                    Nyilvántartási száma: cg. 11-09-019271/6<br>
+                    Telefonszáma: 06 30 1991781<br>
+                    E-mail címe: toth.soross-online.hu<br>
+                    Adószám: 23532098-1-11</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">2. Adatvédelmi tisztviselő elérhetősége</h3>
+                    <p>Dr. Sörössné dr. Tóth Marianna, telefon: 06 30 355 8381.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">3. Az adatkezelés céljai, jogalapjai</h3>
+                    <p>Jelen tájékoztató célja, hogy e honlap látogatói és későbbi ügyfeleink, pácienseink átlátható és egyértelmű formában meg tudják állapítani, milyen személyes adatokat kezelünk, és mi alapján tesszük ezt. A közérthetőséget csak úgy látom biztosítottnak, ha a pontos jogszabályi előírásokat külön pontban soroljuk fel, ezt a tájékoztató végén helyeztük el.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">3.1. „Írjon nekünk!” űrlap a weboldalunk „Elérhetőség” menüpontján</h4>
+                    <p>Jelen honlapon található „Írjon nekünk” űrlap célja az online kapcsolatfelvételi lehetőség biztosítása. Az űrlapon nevet, telefonszámot és email címet kérünk megadni. Ezeket az adatokat az adatkezelési tájékoztató elfogadása esetén hozzájárulás alapján kezeljük.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">3.2. Számlázás</h4>
+                    <p>Amennyiben igénybe veszi egészségügyi szolgáltatásainkat, számlát állítunk ki az elvégzett vizsgálat díjazásáról, melyre jogszabály kötelez, ehhez elkérjük a számlázási nevet és címet.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">3.3. Kapcsolatfelvétel telefonon keresztül</h4>
+                    <p>A honlapra kihelyezett telefonszám felhívása során látni fogjuk a hívó telefonszámát, bemutatkozáskor nevét megkapjuk. A hozzájárulás esetén kezeljük ezeket az adatokat, abból a célból, hogy visszahívhassuk, ha épp nem tudjuk felvenni a telefont. Ha nem alakul ki közöttünk üzleti kapcsolat, telefonszámot és hozzá kapcsolódó nevet nem mentjük el.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">3.4. Sütik („Cookies”)</h4>
+                    <p>A cookie betűből és számokból álló információcsomag, amit általában a honlapok a böngészőnek küldenek el azzal a céllal, hogy elmentsenek bizonyos beállításokat, megkönnyítsék a honlap használatát és közreműködjenek abban, hogy néhány releváns, statisztikai jellegű információt gyűjtsünk a látogatókról. A cookie-k (sütik) nem tartalmaznak személyes információkat, és nem alkalmasak az egyéni felhasználó azonosítására. A cookie-k (sütik) gyakran olyan egyéni azonosítót tartalmaznak – egy titkos, véletlenül generált számsort – amelyet az eszközöd tárol. Néhány cookie (süti) a honlap bezárása után megszűnik, néhány pedig hosszabb időre tárolásra kerül a számítógépén.</p>
+                    <p>A sütikkel kapcsolatos minden tevékenységet meggátolhat, a korábbi látogatásai során elhelyezett adatfájlokat töröli, ennek pontos módjáról böngésző információs oldala tájékoztat, melyeket a következő oldalakon találhatók:<br>
+                    <a href="#" class="text-brand-600 hover:underline">Információ a sütikről Firefox böngészőhöz</a>, <a href="#" class="text-brand-600 hover:underline">Chrome-ban</a>, <a href="#" class="text-brand-600 hover:underline">Internet Explorerben</a>.</p>
+                    <p>Egyes böngészők azt is lehetővé teszik, hogy minden alkalommal, amikor bezárja, automatikusan törlik a böngészési adatokat.</p>
+                    <p>A weboldal egyes részeinek letöltésekor az általunk használt Google Analytics automatikusan kisméretű, bizonyos esetben a személyes adataidat tartalmazó adatfájlokat helyez el a számítógépeden. Ennek megtörténtéről a jelenleg érvényes jogszabályok szerint értesítést is kap, amikor először az oldalra látogat, és jóváhagyását kérjük ehhez. Az adatfájlok a weboldal egyes funkcióinak működéséhez szükségesek, látogatásai alkalmával kapott korábbi adatfájlok révén származó információ az üzemeltetőhöz kerül. Ezen adatfájlok pontos nevéről (_ga, _gat, _gid), funkciójáról itt tájékozódhat: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" class="text-brand-600 hover:underline break-all">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a></p>
+                    <p>A Google Analytics a böngésző révén kapott IP-számot névtelenítve tárolja, nem tudja összekapcsolni a felhasználóval. Az adatokat 26 hónapig őrzi.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">4. Hozzájárulás visszavonása</h3>
+                    <p>Hozzájáruláson alapul adatkezelések (lásd fentieket) a következő tevékenységeknél:</p>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>honlap „Írjon nekünk” űrlapján a Kapcsolatoldalon keresztül történő kapcsolatfelvétel az érdeklődők részéről</li>
+                        <li>látogatottsági statisztika készítése</li>
+                        <li>telefonon történő kapcsolatfelvétel</li>
+                    </ul>
+                    <p>A hozzájárulás bármikor visszavonható, ugyanolyan egyszerű módon, ahogy annak a megadása történt.</p>
+                    <p>Más, hozzájáruláson alapuló adatkezelési műveleteink esetén, kérjük, írjon egy rövid üzenetet az <a href="mailto:info@sani-rad.hu" class="text-brand-600 hover:underline">info@sani-rad.hu</a> email címre. A hozzájárulás visszavonását megelőző adatkezelés jogszerűnek számít.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">5. Szerződés és jogi kötelezettség</h3>
+                    <p>A számlázási adatok vezetése és a számla kiállítása jogszabályban előírt kötelezettségünk. Ha a kért adatokat megbízónk nem adja át, lehetetlen teljesítenünk a vállalt szolgáltatást.</p>
+                    <p>Szolgáltatásaink megrendelését követően a megrendelőkkel létrejön egy szerződés írásban vagy szóban. A szerződéskötés feltétele, hogy ezeket az adatokat ismerjem, tudnom kell, ki a másik fél, hol érem el. Az adatok ismerete nélkül a szerződést nem tekintem megkötöttnek és a szolgáltatást nem tudom teljesíteni.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">6. Jogos érdek megnevezése</h3>
+                    <p>Pácienseink vagy kapcsolattartóinak elérhetőségi adatait és nevét jogos érdek alapján kezeljük. A személyes adatokat hosszú évekre visszanyúló, korábbi levelezéseink, találkozásaink során maguktól az érintettektől kaptuk, a bizalmas kezelésről már meggyőződhettek az érintettek.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">7. Az adatok tárolásának időtartama</h3>
+                    <p>Kapcsolatfelvételi űrlap (név, telefonszám, email cím) – üzleti kapcsolat lezárásáig, de évente felülvizsgálat<br>
+                    Számlázási név és cím – jogszabályban előírt ideig, Kft. esetében tárgyév + 5 év<br>
+                    Weboldal karbantartási munkák (pl. biztonsági mentés tárolása) – szerződés fennállásáig<br>
+                    Üzleti partnerek adatai (név, e-mail cím, telefonszám) – amíg létezik az üzleti kapcsolat vagy törlési kérelemig<br>
+                    sani-rad.hu weboldalról érkező sütik – sütik érvényességi idejéig, ill. amíg a felhasználó nem törli a böngészőjéből azokat.<br>
+                    GA látogatottsági statisztika – 26 hónap</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">8. Biztonsági intézkedések</h3>
+                    <p>Vállalkozásunkban megfelelő biztonsági intézkedésekkel gondoskodunk arról, hogy a személyes adatokat védjük többek között a jogosulatlan hozzáférés ellen, a téves nyilvánosságra hozatal ellen vagy a jogosulatlan megváltoztatás ellen. A számítógépeinkre jelszó megadása után lehet belépni, melyet véd a vírusoktól. Telefonunkat számkód azonosítással használjuk. Weboldal esetén is mindent megteszünk azért, hogy illetéktelenek ne törjék fel.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">9. Adatfeldolgozók</h3>
+                    <p>Vállalkozásunk egyes feladatai ellátása érdekében adatfeldolgozókat vesz igénybe.</p>
+                    <p><strong>Tárhelyszolgáltatás:</strong><br>
+                    Tárhelypark Kft., 1122 Budapest, Gaál József út 24. Online tárhely biztosítása</p>
+                    <p><strong>Emailek fogadása és küldése:</strong><br>
+                    Gmail – Google Inc., Mountain View, California, USA<br>
+                    (Hozzáférés a levelezéshez és annak minden adatához.)</p>
+                    <p><strong>Google Analytics:</strong><br>
+                    Google Inc., Mountain View, California, USA<br>
+                    (Hozzáférés a honlap látogatóinak anonimizált, személyhez nem köthető IP címéhez.)</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">10. Harmadik országba továbbítás</h3>
+                    <p>Egyedüli harmadik ország, amelybe adattovábbítás történik, az Amerikai Egyesült Államok. Az USA-val megfelelőségi határozat született 2016. július 12-én (<a href="https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/eu-us-privacy-shield_en" target="_blank" class="text-brand-600 hover:underline break-all">https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/eu-us-privacy-shield_en</a>), amelyet a Google (<a href="https://policies.google.com/privacy/frameworks" target="_blank" class="text-brand-600 hover:underline">https://policies.google.com/privacy/frameworks</a>) is betart.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">11. Az érintett jogai</h3>
+                    
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.1. Hozzáférés a személyes adatokhoz</h4>
+                    <p>Weboldalunk látogatói, pácienseink jogosultak visszajelzést kérni arra vonatkozóan, hogy személyes adataik kezelése folyamatban van-e, és ha igen, jogosultak hozzáférést kapni a következő információkhoz:</p>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>adatkezelés céljai</li>
+                        <li>az érintett személyes adatok kategóriái</li>
+                        <li>címzettek, akikkel / amelyekkel a személyes adatokat közölték vagy közölni fogják, beleértve a harmadik országbeli címzetteket és a nemzetközi szervezeteket,</li>
+                        <li>az adatok tárolásának tervezett időtartama, ha ez nem lehetséges, ezen időtartam meghatározásának szempontjai,</li>
+                        <li>az érintett azon joga, hogy kérelmezheti az adatkezelőtől a rá vonatkozó személyes adatok helyesbítését, törlését vagy kezelésének korlátozását, és tiltakozhat az ilyen személyes adatok kezelése ellen</li>
+                    </ul>
+                    <p>Az adatkezelés tárgyát képező személyes adatok másolatát rendelkezésére bocsátjuk. Ha a kérelem elektronikus úton került benyújtásra, az információkat széles körben használt elektronikus formátumban adjuk át (.doc), kivéve, ha az érintett másképp kéri.<br>
+                    A másolat igénylésére vonatkozó jog nem érintheti hátrányosan mások jogait és szabadságait.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.2. Helyesbítéshez való jog</h4>
+                    <p>Weboldal látogatói, pácienseink jogosultak arra, hogy kérésre helyesbítsük a rájuk vonatkozó pontatlan személyes adatokat. Figyelembe véve az adatkezelés célját, kérhető a hiányos személyes adatok kiegészítése. A helyesbítésről minden olyan címzettet tájékoztatnunk kell, akivel a személyes adatot közöltük, kivéve, ha ez lehetetlen vagy aránytalanul nagy erőfeszítést igényel. Az érintettet kérésre tájékoztatjuk a címzettekről.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.3. Törléshez való jog</h4>
+                    <p>Indokolatlan késedelem nélkül kötelesek vagyunk törölni pácienseink, weboldal látogatóink kérésére, vagy kérés nélkül is a rá vonatkozó személyes adatokat, ha</p>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>személyes adatokra már nincs szükség abból a célból, amelyből azokat gyűjtöttem vagy más módon kezeltem;</li>
+                        <li>a páciens/látogató visszavonja az adatkezelés alapját képező hozzájárulását, és az adatkezelésnek nincs más jogalapja;</li>
+                        <li>a páciens /látogató tiltakozik az adatkezelés ellen, és nincs elsőbbséget élvező jogszerű ok az adatkezelésre;</li>
+                        <li>a személyes adatokat jogellenesen kezeltem;</li>
+                        <li>a személyes adatokat az adatkezelőre alkalmazandó uniós vagy tagállami jogban előírt jogi kötelezettség teljesítéséhez törölni kell;</li>
+                    </ul>
+                    <p>Ha nyilvánosságra hoztuk a személyes adatot, amelyet törölnöm kell, az elérhető technológia és a megvalósítás költségeinek figyelembevételével megtesszük az ésszerűen elvárható lépéseket annak érdekében, hogy tájékoztassuk az adatokat kezelő adatkezelőket, hogy páciensünk/weboldal látogatónk kérelmezte a szóban forgó személyes adatokra mutató linkek vagy e személyes adatok másolatának illetve másodpéldányának törlését.</p>
+                    <p>Nem kell törölni a személyes adatokat, ha az adatkezelés szükséges jogi igények előterjesztéséhez, érvényesítéséhez, illetve védelméhez.</p>
+                    <p>A törlésről minden olyan címzettet tájékoztatnunk kell, akivel a személyes adatot közöltem, kivéve, ha ez lehetetlen vagy aránytalanul nagy erőfeszítést igényel. Páciensünket/a felhasználót kérésre tájékoztatom a címzettekről.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.4. Az adatkezelés korlátozásához való jog</h4>
+                    <p>Páciensünk /a weboldal látogatója jogosult kérni az adatkezelés korlátozását, ha:</p>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>vitatja a személyes adatok pontosságát, tisztázásig</li>
+                        <li>az adatkezelés jogellenes, és az adatok törlése helyett kéri azok felhasználásának korlátozását;</li>
+                        <li>már nincs szükségem adatokra adatkezelés céljából, de a páciens igényli azokat jogi igények előterjesztéséhez, érvényesítéséhez vagy védelméhez;</li>
+                        <li>a felhasználó / páciens tiltakozott a jogos érdekből történő adatkezelés ellen; ez esetben a korlátozás arra az időtartamra vonatkozik, amíg megállapításra nem kerül, hogy az adatkezelő jogos indokai elsőbbséget élveznek-e az érintett jogos indokaival szemben.</li>
+                    </ul>
+                    <p>Ha az adatkezelés korlátozás alá esik, a személyes adatokat a tárolás kivételével csak a felhasználó / páciens hozzájárulásával, vagy jogi igények előterjesztéséhez, érvényesítéséhez vagy védelméhez, vagy más természetes vagy jogi személy jogainak védelme érdekében, vagy az Unió, illetve valamely tagállam fontos közérdekéből lehet kezelni.</p>
+                    <p>A korlátozás feloldásáról a felhasználót / pácienst előzetesen tájékoztatjuk.<br>
+                    A korlátozásról minden olyan címzettet tájékoztatnunk kell, akivel a személyes adatot közöltem, kivéve, ha ez lehetetlen vagy aránytalanul nagy erőfeszítést igényel. Páciens /a felhasználót kérésre tájékoztatom a címzettekről.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.5. Adathordozáshoz való jog</h4>
+                    <p>Az automatizált módon történő adatok kezelése esetén, amennyiben az adatkezelés jogalapja a hozzájárulás vagy a szerződéses jogalap, ügyfelem/megbízóm/a weboldal látogatója jogosult arra, hogy a rá vonatkozó, általa rendelkezésemre bocsátott személyes adatait tagolt, széles körben használt, géppel olvasható formátumban megkapja, és ezeket az adatokat egy másik adatkezelőnek továbbítsa, amennyiben ez technikailag megvalósítható.<br>
+                    Az adathordozhatósághoz való jog nem érintheti hátrányosan mások jogait és szabadságait.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.6. Tiltakozás joga</h4>
+                    <p>Az ügyfelem / megbízóm tiltakozhat a személyes adatai kezelése ellen saját helyzetével kapcsolatos okokból bármikor, amennyiben az adatkezelés jogalapja jogos érdek. Ebben az esetben a személyes adatokat nem kezelhetjük tovább, kivéve, ha bizonyítjuk, hogy azt olyan kényszerítő erejű jogos okok indokolják, amelyek elsőbbséget élveznek ügyfelem / megbízóm érdekeivel, jogaival és szabadságaival szemben, vagy amelyek jogi igények előterjesztéséhez, érvényesítéséhez vagy védelméhez kapcsolódnak.</p>
+
+                    <h4 class="text-base font-bold text-brand-800 mt-6 mb-2">11.7. Automatizált döntéshozatal egyedi ügyekben, beleértve a profilalkotást</h4>
+                    <p>Mivel nem végzek automatizált döntéshozatalt és profilalkotást, ezért ezt az alapjogot biztosítani nem tudom.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">12. Panasz</h3>
+                    <p>Személyes adatait a legnagyobb körültekintéssel kezeljük. Amennyiben mégis úgy érzi, hogy nem tettünk meg minden tőlünk elvárható intézkedést a személyes adatait védelme érdekében, vagy egyszerűen csak kérdése van, kérjük, írj nekem az <a href="mailto:info@sani-rad.hu" class="text-brand-600 hover:underline">info@sani-rad.hu</a> email címen.</p>
+                    <p>Amennyiben vállalkozásunk az adatkezelési elveket megsérti, az érintettek bíróság előtt gyakorolhatják jogérvényesítési lehetőségeiket, polgári per keretében. A per elbírálása a törvényszék hatáskörébe tartozik.<br>
+                    A per az érintett lakóhelye szerinti törvényszék előtt is megindítható.</p>
+                    <p>Továbbá, bármilyen személyes adattal kapcsolatos panasszal, kérdéssel keresse a Nemzeti Adatvédelmi és Információszabadság Hatóságot (1125 Budapest, Szilágyi Erzsébet fasor 22/C., levelezési cím: 1530 Budapest, Pf.: 5., email: ugyfelszolgalat@naih.hu, honlap: <a href="http://www.naih.hu" target="_blank" class="text-brand-600 hover:underline">http://www.naih.hu</a>).</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">13. Automatizált döntéshozatal</h3>
+                    <p>Vállalkozásunk nem működik automatizált döntéshozatal.</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">14. Az adatkezelések jogalapjának meghatározásakor ezeket a jogszabályhelyeket vettünk figyelembe</h3>
+                    <p>A honlapon történő kapcsolatfelvétel, látogatottsági statisztika és konverziómérés, a sütik és az üzleti kapcsolatok és megállapodások kapcsán történő adatkezelések kapcsán a Az Európai Parlament és Tanács (EU) 2016/679. rendelete 6. cikk (1) bek. a) pontját vettem figyelembe.<br>
+                    A számlázással kapcsolatos adatkezelés alapja az Európai Parlament és Tanács (EU) 2016/679. rendelete 6. cikk (1) bek. c) és az adózás rendjéről szóló 2017. évi CL. tv. 78. § (3) bek. (bizonylatok megőrzési határideje) és az általános forgalmi adóról szóló 2007. évi CXXVII. tv. 169. § e) (számla kötelező elemei).</p>
+
+                    <h3 class="text-lg font-bold text-brand-900 mt-8 mb-3">Egyéb rendelkezések</h3>
+                    <p>Jelen tájékoztató 2018. május 25-én lép hatályba és amint olyan új iránymutatások, állásfoglalások, részletszabályok válnak ismertté, amelyek miatt módosítani kell, felülvizsgáljuk a tartalmat.</p>
+                    
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

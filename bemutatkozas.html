@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-brand-100">
+                <h1 class="text-4xl font-extrabold text-brand-900 mb-8 border-b border-brand-200 pb-6">Bemutatkozás</h1>
+                
+                <h2 class="text-2xl font-serif italic text-brand-700 mb-8">Tisztelt Látogató!</h2>
+                
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed text-justify">
+                    <p>Örömmel üdvözlöm honlapunkon!</p>
+                    
+                    <p>Ismét egy új, reményeim szerint az Önök igényeihez rugalmasan alkalmazkodó, folyamatosan bővülő egészségügyi vállalkozást ismerhet meg tájékoztatónkból.</p>
+                    
+                    <p>Orvosként régóta látom és szükségszerűnek is érzem, hogy párhuzamosan az egyre nehezebb helyzetben lévő állami egészségüggyel egyre több magas színvonalon működő magán szolgáltató jelenjen meg.</p>
+                    
+                    <p>Közel húsz éves szakmai ismerettel a hátam mögött ismerem az ellátórendszer kuszaságát, hiányosságait. Sokszor látom a beteg kiszolgáltatottságát, útvesztőt, mire ellátást kap. Az ingyenes egészségügy mára illúzió, senki sem gondolja komolyan. A betegek részéről jogos az elvárás, hogy a pénzükért megfelelő, színvonalas ellátást kapjanak. Az Önök igényeit nagyrészt ismerve igyekszünk kollégáimmal megteremteni alakuló egészségügyi szolgáltatásunk szakmaiságát, arculatát. Célunk a jó kapcsolat kialakítása, hogy gondozott betegeink hosszabb távon is bizalommal jöjjenek hozzánk! Fontosnak tartjuk a holisztikus szemléletű gyógyítást, mely nem csak egy körülírt problémával foglalkozik, hanem a beteg ember egészét - testét, lelkét, akár környezetét - vizsgálja, kezeli. Tapasztalataink szerint személyesebbé, tartalmasabbá válik ezáltal az orvos-beteg találkozás.</p>
+                    
+                    <p>Kérjük, tekintsék meg képgalériánkat is! Büszkén említem meg, hogy a rendelő tervezése, kivitelezése saját kezűleg történt. Amennyiben szolgáltatásunk felkeltette érdeklődését, további információt kaphat rendeléseinkről, kollégáinkról a menüsorban.</p>
+                    
+                    <p>Közvetlenül is elérhet minket kérdésével - akár panaszával! - az E-mail info segítségével. Köszönjük az érdeklődést, viszont látásra!</p>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-brand-100 text-right">
+                    <p class="text-2xl font-serif italic text-brand-900">Dr. Söröss Tamás</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

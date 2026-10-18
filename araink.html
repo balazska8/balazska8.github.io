@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áraink | SANI-RAD Kft.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-brand-700 font-semibold border-b-2 border-brand-700 pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-extrabold text-brand-900 mb-6 inline-block border-b border-brand-200 pb-4">Áraink</h1>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-100 mt-6 text-left space-y-4 text-slate-600 italic">
+                    <p>A díjakról a rendelőben számlát állítunk ki, amelyet a helyszínen készpénzben vagy átutalással lehet kiegyenlíteni. Online, vagy telefonos konzultáció esetén a számlát e-mail-ben vagy postán küldjük el, mely átutalással teljesíthető.</p>
+                    <p class="text-brand-800 font-medium">Lemondásra vonatkozó szabályok: A már lefoglalt időpontok lemondását kérjük a foglalási időpontok előtt legalább 24 órával szíveskedjenek jelezni!</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                
+                <!-- Radiológia -->
+                <section>
+                    <h2 class="text-xl font-serif text-brand-600 text-center mb-6">Radiológia árak 2024. június 15-től</h2>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100">
+                        <div class="divide-y divide-brand-100">
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="font-medium text-brand-900">Hasi-kismedencei, emlők, pajzsmirigy és nyaki lágyrész</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="font-medium text-brand-900">Egyéb lágyrész ultrahang</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                            
+                            <!-- Alkategória -->
+                            <div class="p-4 bg-brand-100/50">
+                                <span class="font-bold text-brand-900">Vascularis (ér) ultrahang vizsgálatok:</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Carotis duplex (nyaki ér), kétoldali</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mozgásszervi ultrahang -->
+                <section>
+                    <h2 class="text-xl font-serif text-brand-600 text-center mb-6">Mozgásszervi ultrahang árak 2024. június 15-től</h2>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100">
+                        <div class="divide-y divide-brand-100">
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Izületi ultrahang (izületenként)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Csípőízületi ultrahang (baba)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">8 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Csípőízületi ultrahang és hasi ultrahang (baba)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Izom, ín ultrahang (régiónként)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Két régió együttes vizsgálata</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">26 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Három régió együttes vizsgálata</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">36 000 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Neurológia -->
+                <section>
+                    <h2 class="text-xl font-serif text-brand-600 text-center mb-6">Neurológia árak 2026. február 15-től érvényesek</h2>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100">
+                        <div class="divide-y divide-brand-100">
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Első vizsgálat (kórelőzmény felvétel, betegvizsgálat, receptírás)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">25 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Kontroll vizsgálat (3 hónapon belül)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">12 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Kontroll vizsgálat (3 hónapon túl)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">20 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Receptírás</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">8 000 Ft</span>
+                            </div>
+                            
+                            <!-- Műszeres vizsgálatok főkategória -->
+                            <div class="p-4 bg-brand-200/40 text-center">
+                                <span class="font-bold text-brand-900 uppercase tracking-wider text-sm">Műszeres vizsgálatok</span>
+                            </div>
+                            
+                            <!-- EMG Alkategória -->
+                            <div class="p-4 bg-brand-100/50">
+                                <span class="font-bold text-brand-900">EMG</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Egy felső végtag, ideg ultrahanggal, tűelektródás vizsgálat nélkül (alagút szindróma)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">20 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Egy felső végtag, ideg ultrahanggal, tűelektródás vizsgálattal (alagút szindróma)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">22 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Két felső végtag, ideg ultrahanggal (alagút szindróma):</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">32 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Alsó végtag (alagút szindróma, gyöki laesió)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">28 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Felső és alsó végtag (polyneuropathia)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">32 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Felső vagy alsó végtag, kiterjesztett (tűelektródás vizsgálattal)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">30 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Felső és alsó végtag, kiterjesztett (tűelektródás vizsgálattal)</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">38 000 Ft</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-brand-50/30 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">Repetitív ingerlés (max. 3 izom):</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">28 000 Ft</span>
+                            </div>
+                            
+                            <!-- Ideg ultrahang Alkategória -->
+                            <div class="p-4 bg-brand-100/50">
+                                <span class="font-bold text-brand-900">Ideg ultrahang:</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                                <span class="text-brand-900">egy ideg</span>
+                                <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">25 000 Ft</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5 bg-brand-50 border-t border-brand-100 text-sm text-slate-500 italic text-justify">
+                            Az EMG vizsgálat magában foglalja a tájékozódó, célzott neurológiai vizsgálatot, a neurológiai vizsgálat és a kontroll vizsgálat magában foglalja a receptírást.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Kardiológia -->
+                <section>
+                    <h2 class="text-xl font-serif text-brand-600 text-center mb-6">Kardiológia árak 2024. június 15-től</h2>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100">
+                        <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                            <span class="text-brand-900">Szív Doppler - echo - kardiológiai szakvizsgálat konzultációval</span>
+                            <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">30 000 Ft</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Fül- orr- gégészet -->
+                <section>
+                    <h2 class="text-xl font-serif text-brand-600 text-center mb-6">Fül- orr- gégészet árak 2024. június 15-től</h2>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100">
+                        <div class="flex justify-between items-center p-4 hover:bg-brand-50 transition-colors">
+                            <span class="text-brand-900">Fül- orr- gégészet vizsgálati díj</span>
+                            <span class="whitespace-nowrap font-semibold text-slate-700 ml-4">13 000 Ft</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+    <section class="py-16 bg-brand-800 border-t border-brand-700 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Linkek logikus listája -->
+                <div class="text-brand-200">
+                    <ul class="space-y-4 text-lg">
+                        <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                        <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                        <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                        <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                        <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                        <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                        
+                        <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                        <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                    </ul>
+                </div>
+
+                <!-- Partner oldal (Ornament by Vernis) -->
+                <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                    <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                    <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                    
+                    <!-- Kép hivatkozása -->
+                    <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                        <!-- Ornament kép beillesztése -->
+                        <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

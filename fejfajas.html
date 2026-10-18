@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANI-RAD Kft. | Egészségére!</title>
+    <!-- Tailwind CSS (Modern framework for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',  // Cream light (Háttér)
+                            100: '#f5efe6', // Cream
+                            200: '#e8dfd5', // Cream border
+                            500: '#8c6b5d', // Light brown accent
+                            700: '#5c4033', // Main brown (Logó szín)
+                            800: '#4a3228', // Dark brown
+                            900: '#36241c', // Deepest brown
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed w-full top-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24"> <!-- Növelt fejléc magasság a nagyobb logóhoz -->
+                
+                <!-- Modernized Logo Area -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <!-- Növelt logó méret -->
+                    <img src="logo.png" alt="SANI-RAD Kft. Logó" class="h-20 w-auto object-contain drop-shadow-sm">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Kezdőoldal</a>
+                    <a href="munkatarsaink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Munkatársaink</a>
+                    <a href="szakrendelesek.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Szakrendeléseink</a>
+                    <a href="araink.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Áraink</a>
+                    <a href="rendelesiido.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Rendelési idő</a>
+                    <a href="elerhetoseg.html" class="text-slate-500 hover:text-brand-700 font-medium transition-colors pb-1">Elérhetőség</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+ <main class="pt-32 pb-20 flex-grow fade-in-up">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12 text-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-brand-900 mb-6 inline-block border-b border-brand-200 pb-4">Fejfájás – kapcsolódó anyagok</h1>
+            </div>
+
+            <div class="space-y-12">
+                
+                <!-- MIGRÉN -->
+                <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                    <h2 class="text-2xl font-serif text-brand-700 mb-6 border-b border-brand-50 pb-3">Migrén</h2>
+                    
+                    <div class="space-y-4 text-slate-600 text-justify leading-relaxed">
+                        <p>Erről a fejfájásról beszélünk a legtöbbet, gyakran az erős fejfájás szinonimájaként említik. Előfordulása a teljes népességre vonatkoztatva 8-12%, a 20-50 közötti nők körében 20-25%. Rohamok formájában jelentkezik, melyek 4 órától 3 napig tarthatnak és havonta többször ismétlődhetnek.</p>
+                        
+                        <p>A fájdalom általában lüktető, görcsös jellegű, szinte mindig hányinger vagy étvágytalanság, máskor hányás, a külvilág ingerei (fények hangok, szagok) iránti fokozott érzékenység kíséri. A betegek többsége alig tudja ellátni napi teendőit, legjobb, ha sötét, nyugodt szobában pihen.</p>
+                        
+                        <p>A betegek egy része a rohamokat előre megérzi, főként hangulatváltozás hívhatja fel rá a figyelmet (<em class="text-brand-800 font-medium">prodroma</em>). A rohamok kb. negyedét látászavar (a látótér egy részén fekete folt, villogó pontok vagy fényes, esetleg színes vonalak, gömb vagy csillag alakzat), jóval ritkábban a végtagok zsibbadása, gyengesége, beszédzavar vagy szédülés vezeti be (<em class="text-brand-800 font-medium">aura</em>). Előfordul az is, hogy aurával bevezetett rohamok váltakoznak aura nélküli fejfájással, máskor esetleg csak az auratünet jelenik meg.</p>
+                        
+                        <p>Mai tudásunk szerint a migrénre való hajlam öröklődik, ennek <em class="text-brand-800 font-medium">genetikai alapjáról</em> is vannak már ismereteink. Ezen kívül biztosan szerepet játszanak a <em class="text-brand-800 font-medium">hormonális változások</em>, hiszen sok nőnek csak a menstruációhoz kapcsolódóan van migrénes rohama, ugyanakkor a terhesség és szoptatás ideje alatt a rohamok megszűnnek. Bizonyos ételek (sárga sajtok, csokoládé), alkohol, rendszertelen táplálkozás, kevés alvás, időjárási frontok a rohamokat szintén kiválthatják.</p>
+                        
+                        <p><em class="text-brand-800 font-medium">A migrén kezelésében</em> megkülönböztetünk roham- és megelőző kezelést.</p>
+                        
+                        <p><em class="text-brand-800 font-medium">Rohamkezelésre</em> mindenkinek szüksége van, de ez nem jelent feltétlenül minden esetben gyógyszeres kezelést. Első lépésként a lehető legtöbb kiváltó tényező kiiktatása javasolt, mert így is kivédhetünk néhány migrénrohamot. A fennmaradó enyhébb rohamok kezelésében a patikában kapható fájdalomcsillapítók segíthetnek, az erősebb rohamok esetén speciális gyógyszerekre lehet szükség, amit ideggyógyász szakorvos írhat fel. A migrén roham kezelésekor szem előtt kell tartani, hogy a rohamot minél hamarabb kezeljük, még mielőtt az kiteljesedett, mert később az eredményes kezelés esélye kisebb. Figyelni kell arra, hogy a kombinált fájdalomcsillapítók rendszeres (heti többszöri) szedése a fejfájást mindennapossá teheti a gyógyszerhez való hozzászokás révén.</p>
+                        
+                        <p><em class="text-brand-800 font-medium">Megelőző kezelésre</em> akkor van szükség, ha a rohamok gyakran jelentkeznek és/vagy a rohamkezelés nem megoldott. Ez azt jelenti, hogy kúraszerűen a migrén kialakulásának esélyét csökkentő gyógyszert kell szedni. Több gyógyszercsalád áll rendelkezésre, a megfelelő gyógyszert orvos választja ki, figyelembe véve az egyéb betegségeket és a lehetséges mellékhatásokat is.</p>
+                    </div>
+                </article>
+
+                <!-- TENZIÓS FEJFÁJÁS -->
+                <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                    <h2 class="text-2xl font-serif text-brand-700 mb-6 border-b border-brand-50 pb-3">Tenziós fejfájás</h2>
+                    
+                    <div class="space-y-4 text-slate-600 text-justify leading-relaxed">
+                        <p>Ez a <em class="text-brand-800 font-medium">leggyakoribb</em> fejfájásforma, előfordulása egyes statisztikák szerint 70-80%, nőkben gyakoribb. A migrénnel ellentétben nem rohamok formájában jelentkezik, gyakoribb a <em class="text-brand-800 font-medium">mindennapos</em>, de legalább heti többszöri előfordulás.</p>
+                        
+                        <p>A fájdalom kevésbé erős, mint migrénben, inkább tompa vagy feszítő jellegű, gyakran olyan érzés, mintha egy abroncs vagy satu szorítaná az ember fejét. A betegeknek általában nem a fájdalom erőssége okoz gondot, hanem az, hogy nehezen vagy egyáltalán nem múlik el. Hányinger, hányás, fény vagy hangok iránti túlérzékenység tenziós fejfájásban nem jellemző, de a két utóbbi enyhe formában előfordulhat. Leggyakrabban az összpontosítást, a munkához szükséges tartós odafigyelést akadályozza a fejfájás.</p>
+                        
+                        <p>Ebben a fejfájásformában sem ismertek pontosan az okok, úgy gondoljuk, hogy szerepe van egyrészt a fájdalomfeldolgozás – valószínűleg szintén öröklött – működészavarának, másrészt a fej körül található és a nyak-vállövi izmok tartós összehúzódásának. Ez utóbbira utal a „tenziós” elnevezés is.</p>
+                        
+                        <p>A tenziós fejfájás fenntartásában gyakran van szerepe a <em class="text-brand-800 font-medium">stressznek</em>, a mozgásszegény életmódnak, legfontosabb ezért a rendszeres mozgás, szükség szerint relaxáció, autogén tréning elsajátítása és rendszeres gyakorlása. Szükség lehet gyógyszerekre is, fájdalomcsillapítóként szintén a nem kombinált formákat részesítsük előnyben, mert a gyógyszerekhez való hozzászokás súlyosbíthatja a fejfájást. Tartós eredményt csak a fejfájást fenntartó tényezők felderítése és kiküszöbölése ill. kezelése hozhat.</p>
+                    </div>
+                </article>
+
+                <!-- CLUSTER FEJFÁJÁS -->
+                <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-100">
+                    <h2 class="text-2xl font-serif text-brand-700 mb-6 border-b border-brand-50 pb-3">Cluster fejfájás és más ritka formák</h2>
+                    
+                    <div class="space-y-4 text-slate-600 text-justify leading-relaxed">
+                        <p>A betegség <em class="text-brand-800 font-medium">ritka</em>, 0,05-0,5%-ra becsülik az előfordulását és férfiakban sokkal gyakoribb, mint nőkben. Ezek a fejfájások is rohamokban jelentkeznek, mindig féloldalon, <em class="text-brand-800 font-medium">vegetatív kísérőtünetekkel</em>: a fájdalom oldalán a szem kipirosodik, könnyezik, esetleg összehúzódik, a szemhéj duzzadt, az azonos oldali orrfél eldugul vagy éppen folyik, az arcfél kipirulhat.</p>
+                        
+                        <p>A cluster fejfájásban nagyon erős, ½-2 óráig tartó rohamok ismétlődnek, a betegek ilyenkor nem fekszenek le, mint a migrénesek többsége teszi, inkább ülnek, vagy sétálnak. A rohamok jellemzően periódusokba rendeződnek, gyakran az évszakváltáskor (tavasszal-ősszel) kezdődnek és 1-3 hónapig tartanak. A periódusokban a rohamok szinte minden nap – olykor naponta többször is - ismétlődnek, sokszor a napnak azonos időszakában (pl. éjszaka-hajnalban).</p>
+                        
+                        <p>A cluster fejfájás okáról még keveset tudunk. A legújabb kutatások alapján biztosra vehető, hogy az agyban működő „biológiai óra”, a hypothalamus működészavara tehető felelőssé a rohamok elindításáért.</p>
+                        
+                        <p><em class="text-brand-800 font-medium">A cluster fejfájás kezelésében</em> is roham- és megelőző kezelést különítünk el. A rohamokban egyszerű fájdalomcsillapítók hatástalanok, mindenképpen szakorvos segítségére van szükség a gyógyszer kiválasztásában. Megelőző kezelésben több gyógyszercsaládot alkalmazhatunk, a gyógyszerrel nem a periódusok elindulását tudjuk megelőzni, hanem a periódus hosszát igyekszünk megrövidíteni.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+
+        <!-- LÁBLÉC ELŐTTI MENÜ ÉS PARTNER SÁV -->
+        <section class="py-16 bg-brand-800 border-t border-brand-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Linkek logikus listája -->
+                    <div class="text-brand-200">
+                        <ul class="space-y-4 text-lg">
+                            <li><a href="bemutatkozas.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Bemutatkozás</a></li>
+                            <li><a href="szakrendelesek.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Szakrendeléseink</a></li>
+                            <li><a href="munkatarsaink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Munkatársaink</a></li>
+                            <li><a href="rendelesiido.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Rendelési idő</a></li>
+                            <li><a href="araink.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Áraink</a></li>
+                            <li><a href="elerhetoseg.html" class="hover:text-white transition-colors flex items-center group"><span class="text-brand-500 mr-3 group-hover:text-brand-300 transition-colors">▪</span> Elérhetőség</a></li>
+                            
+                            <li class="pt-4 mt-2 border-t border-brand-700/50"><a href="fejfajas.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Fejfájás – kapcsolódó anyagok</a></li>
+                            <li><a href="adatkezeles.html" class="text-base text-brand-400 hover:text-white transition-colors flex items-center group"><span class="text-brand-600 mr-3">▪</span> Adatkezelési tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner oldal (Ornament by Vernis) -->
+                    <div class="bg-brand-900/40 p-8 rounded-3xl border border-brand-700/50 flex flex-col items-center text-center hover:bg-brand-900/60 transition-colors shadow-inner">
+                        <h4 class="text-black font-extrabold mb-2 text-base uppercase tracking-widest">Tekintse meg másik weboldalunkat is</h4>
+                        <p class="text-white text-2xl mb-6 font-serif italic">Ornament by Vernis</p>
+                        
+                        <!-- Kép hivatkozása -->
+                        <a href="https://ornamentbyvernis.com" target="_blank" class="block overflow-hidden rounded-2xl border-4 border-brand-800 hover:border-brand-500 transition-colors shadow-xl group bg-brand-100 flex items-center justify-center w-64 h-64 relative">
+                            <!-- Ornament kép beillesztése -->
+                            <img src="ornament.png" alt="Ornament by Vernis" class="absolute inset-0 w-full h-full object-cover z-0">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-900 text-brand-200 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 SANI-RAD KFT. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
